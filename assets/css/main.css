@@ -3435,11 +3435,12 @@
 		}
 
 		.grid-style > * {
-			padding: 2rem;
-			width: calc(50% + 2rem);
+			padding: 1rem;
+			width: calc(32%); 
 		}
+		// it was 50% + 2 rem
 
-		.grid-style > :nth-child(-n + 2) {
+		/*.grid-style > :nth-child(-n + 2) {
 			padding-top: 0;
 		}
 
@@ -3459,6 +3460,7 @@
 		.grid-style > :nth-child(2n) {
 			width: calc(50% + 0rem);
 		}
+		*/
 
 		.grid-style .box {
 			margin: 0;
