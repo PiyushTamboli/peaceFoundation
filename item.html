@@ -1,0 +1,62 @@
+<html>
+   <head>
+      <title>Highcharts Tutorial</title>
+      <script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <script src = "https://code.highcharts.com/highcharts.js"></script> 
+   </head>
+   
+   <body>
+      <div id = "container" style = "width: 100%; height: auto; margin: 0 auto"></div>
+      <script language = "JavaScript">
+         $(document).ready(function() {
+            Highcharts.chart('container', {
+    chart: {
+        type: 'bar'
+    },
+    title: {
+        text: 'Risk to Reward Trend'
+    },
+    xAxis: {
+        enabled:false,
+        categories: ['Time', 'Cost', 'Risk', 'Reward']
+    },
+    yAxis: {
+        visible:false,
+		title: {
+            text: 'Life Cycle of Farm item'
+        }
+    },
+	colors:['aqua', 'maroon', 'silver', 'navy', 'green'],
+	credits: {
+		enabled:false
+	},
+    legend: {
+        reversed: true
+    },
+    plotOptions: {
+        series: {
+            stacking: 'normal'
+        }
+    },
+    series: [{
+        name: 'Shopping Malls',
+        data: [10, 25, 5, 50]
+    },{
+        name: 'Big Brands',
+        data: [10, 15, 5, 40]
+    },{
+        name: 'Tailor',
+        data: [5, 5, 8,  5]
+    },{
+        name: 'Weaver',
+        data: [5, 5, 7, 3]
+    },{
+        name: 'Farmer',
+        data: [70, 50, 75, 2]
+    }]
+});
+         });
+      </script>
+   </body>
+   
+</html>
