@@ -1,0 +1,65 @@
+<html>
+   <head>
+      <title>Highcharts Tutorial</title>
+      <script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <script src = "https://code.highcharts.com/highcharts.js"></script> 
+	  <script src="https://code.highcharts.com/modules/timeline.js"></script>
+   </head>
+   <body>
+      <div id = "container" style = "width: 100%; height: auto; margin: 0 auto"></div>
+      <script language = "JavaScript">
+         $(document).ready(function() {
+            Highcharts.chart('container', {
+    chart: {
+        type: 'timeline'
+    },
+    xAxis: {
+        visible: false
+    },
+    yAxis: {
+        visible: false
+    },
+	credits: {
+		enabled:false
+	},
+    title: {
+        text: 'Timeline of textile'
+    },
+    
+    colors: [
+        '#4185F3',
+        '#427CDD',
+        '#406AB2',
+        '#3E5A8E',
+        '#3B4A68',
+        '#363C46'
+    ],
+    series: [{
+        data: [{
+            name: 'Farmer',
+            label: 'Works in the farm for more than 6 months \n Borrows loan to buy fertilizer, pesticides, etc \n Pays labour charges to farm workers, tractors, feeds animals',
+            description: 'High interest rates due to low colatral, steady expenses for food, education\n occassional weddings in family, medical emergencies in family '
+        }, {
+            name: 'Weaver',
+            label: 'Gets cotton in retail rate from agents not farmers. \n Very tight margins due to machine looms \n fluctuating demand and very low operating margin\ Other challenges are similar to farmer ',
+            description: 'Usually located in poor semi urban area, steady expenses for food, education\n occassional weddings in family, medical emergencies in family'
+        }, {
+            name: 'Tailor',
+            label: 'Usually located in poor semi urban area, \n Very tight margins due to large corporations \n Need to buy many consumable items like buttons, zips, embroidary machines etc',
+            description: 'Usually located in poor semi urban area,'
+        }, {
+            name: 'Big Brand',
+            label: 'True beneficiary of economy of scale \n Pays minimum wages to low income countries like Bangladesh, India etc. \n Main role is packaging and distribution, \n Externalize the cost and internalize the Profit\ Pays no tax to any goverment using accounts routed through countries like Luxembourg',
+            description: 'First human on the Moon, and first space launch from a celestial body other than the Earth. First sample return from the Moon'
+        }, {
+            name: 'Shopping Mall',
+            label: 'Operates on huge profit margins \n Buy out small player\n Huge expenses on advertisements and promotions',
+            description: 'Operates on huge profit margins \n Buy out small player\n Huge expenses on advertisements and promotions'
+        }]
+    }]
+});
+         });
+      </script>
+   </body>
+   
+</html>
